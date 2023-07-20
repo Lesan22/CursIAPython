@@ -1,0 +1,13 @@
+Aquest codi de Python utilitza la biblioteca scikit-learn (o sklearn) per a realitzar una regressió lineal. A continuació, t'explicaré pas a pas què fa cada línia de codi:
+
+from sklearn.linear_model import LinearRegression: Aquesta línia importa la classe LinearRegression de la biblioteca sklearn. La classe LinearRegression proporciona funcionalitats per a realitzar models de regressió lineal.
+
+mlineal = LinearRegression(): Aquesta línia crea una nova instància de l'objecte LinearRegression i la guarda en la variable mlineal. Això ens permet utilitzar les funcions i mètodes de la classe LinearRegression a través d'aquesta variable.
+
+mlineal.fit(x.values.reshape(-1,1), y): Aquesta línia ajusta el model de regressió lineal als conjunts de dades x i y. El paràmetre x.values.reshape(-1,1) és una transformació de les dades x per assegurar-se que tenen la forma adequada per al model de regressió lineal. La funció fit calcula els coeficients i altres paràmetres òptims del model utilitzant l'algorisme de regressió lineal.
+
+a = mlineal.coef_: Aquesta línia guarda els coeficients de la regressió lineal en la variable a. Els coeficients representen les pendents de les variables predictores en la regressió lineal.
+
+b = mlineal.intercept_: Aquesta línia guarda l'intercepte de la regressió lineal en la variable b. L'intercepte representa el valor de la variable dependent quan totes les variables predictores són zero.
+
+En resum, aquest codi importa la classe LinearRegression de la biblioteca sklearn, crea un model de regressió lineal, l'ajusta als conjunts de dades x i y, i guarda els coeficients i l'intercepte del model en les variables a i b, respectivament. Aquests coeficients i l'intercepte són utilitzats per a predir valors nous basats en les variables predictores x.
